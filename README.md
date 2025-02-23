@@ -66,7 +66,7 @@ eBOM (Electronic Parts):
 19. Insert Watch Press Front shafts on Watch Press Rear.
 20. Place the wath on Wath Press and insert it on the Watch Winder drum.
 
-<img src="https://github.com/garroble/WatchWinder/blob/main/images/electronic_connections.png" width=50>
+<img src="https://github.com/garroble/WatchWinder/blob/main/images/electronic_connections.png" width=200>
 
 
 ## Firmware
