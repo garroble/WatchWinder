@@ -87,7 +87,17 @@ On Arduino Cloud:
    3. Scheduler linked to ctrl_start_time to schedule the start time, duration and repeat every.
    4. Graph linked to cl_winder_turns to keep track of the number of rotations.
 
+### Firmware tuning
+Based on your watch, you may need to change the number of rotations a day needed.
+You can set it on the WatchWinder.ino file:
+> #define WATCH_TURNS_PER_DAY 750
+
+The program continuously rotates clockwise as it is. If you need to make it rotate counterclockwise, just remove the minus signal on:
+> int motor_target = -MOTOR_MAX_STEPS;
+
+
 ## License
+Licensed under GNU General Public License V3.0.
 
 ## Acknowledgements
 Thanks to the following sites and their community for providing the 3D models for all the purchased parts.
