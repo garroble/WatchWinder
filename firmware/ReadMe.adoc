@@ -13,10 +13,13 @@ Go to https://github.com/garroble/WatchWinder for more information.
 
 == Step 2: Arduino Cloud setup.
 Create the following Cloud Variables:
+....
+Things Setup
   ├── bool          cl_winder_status => Cloud status of the device to know if it is running.
   ├── CloudCounter  cl_winder_turns  => Number of complete turns done in an active period.
   ├── CloudSchedule ctrl_start_time  => Scheduler to setup the daily active period.
   └── bool          ctrl_switch      => Remote control on/off.
+....
 
 === Folder structure
 
@@ -27,28 +30,6 @@ Create the following Cloud Variables:
   ├── arduino_secrets.h    => header for WiFi SSID/PASS
   └── ReadMe.adoc          => this file
 ....
-
-=== BOM
-mBOM (Mechanical Parts):
-|===
-| ID | Part name     | Part number                  | Quantity
-| S1 | Spring        | 0.5x5x25                     | 2       
-| M1 | Stepper Motor | 28BYJ-48                     | 1        
-| I1 | Insert M3     | 150419, INS 19/M3 / .226L EK | 2        
-| I2 | Insert M4     | 150421, INS 19/M4 / .321L EK | 2
-| S2 | Screw         | M3x10                        | 2
-| S3 | Screw         | M4x20                        | 2
-| B1 | Bearing       | 608zz                        | 2
-| C1 | Cable F-F     | Dupont Cable FF              | 10
-|===
-
-eBOM (Electronic Parts):
-|===
-| ID | Part name         | Part number   | Quantity
-| B1 | Arduino           | Nano RP2040   | 1       
-| B2 | Motro Driver      | ULN2003       | 1        
-| B3 | Voltage Step Down | MP1584EN      | 1        
-|===
 
 === Help
 This document is written in the _AsciiDoc_ format, a markup language to describe documents. 
