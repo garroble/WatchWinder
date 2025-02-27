@@ -18,6 +18,9 @@ The FreeCAD model also includes an assembly to check how everything fits togethe
 You can also find the STL files en m3f files to directly import the parts in 3D printing slicing programs.
 The models have been proved on Bambu Lab A1 mini printer successfully.
 
+The 3D model is also published on:
+* Maker World (https://makerworld.com/es/models/1157015-watch-winder#profileId-1162305)
+
 Other parts that need to be purchased to get the full mechanical assembly are:
 
 mBOM (Mechanical Parts):
