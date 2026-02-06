@@ -139,6 +139,8 @@ void loop() {
     cl_winder_status = false;
     cl_winder_turns = 0;
     digitalWrite(LEDB, LOW);
+    winder.moveTo(winder.currentPosition());  // cancel all movement
+    winder.disableOutputs();
   }
 }
 
