@@ -124,7 +124,7 @@ void loop() {
         winder.setCurrentPosition(0);
         winder.moveTo(motor_target);
       }
-      cl_winder_turns = cl_winder_turns++;
+      cl_winder_turns++;
       Serial.print("Winder revolutions: ");
       Serial.println(cl_winder_turns);
     }
@@ -182,7 +182,7 @@ void onCtrlSwitchChange()  {
 void onCtrlStartTimeChange()  {
   // Add your code here to act upon CtrlStartTime change
   int program_len = ctrl_start_time.getCloudValue().len;
-  step_interval = long((ctrl_start_time.getCloudValue().len*1000)/(WATCH_TURNS_PER_DAY+1));
+  step_interval = long((ctrl_start_time.getCloudValue().len*1000L)/(WATCH_TURNS_PER_DAY+1));
   if (step_interval < 10000) {
     step_interval = 10000;
   }
